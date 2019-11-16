@@ -1,1 +1,1 @@
-# scholl
+# school stuff
