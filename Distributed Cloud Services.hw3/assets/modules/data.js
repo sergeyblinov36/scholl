@@ -31,4 +31,4 @@ mongoose
 //
 // });
 
-module.exports ={ ts,url,options}
+module.exports ={ ts,url,options};

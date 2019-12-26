@@ -5,13 +5,13 @@ dotenv.config();
 
 const tvGuideRouter = new Router();
 
-tvGuideRouter.get(`/:Date`, tvGuideController.getByTime);
-// tvGuideRouter.get('/:tvshow', tvGuideController.get);
+tvGuideRouter.get(`/date/:Date`, tvGuideController.getByTime);
+tvGuideRouter.get(`/name/:id`, tvGuideController.getById);
 tvGuideRouter.get("/all", tvGuideController.getAll);
 //tvGuideRouter.get("/*",tvGuideController.error);
-// tvGuideRouter.post('/', tvGuideController.post);
-// tvGuideRouter.put('/:id', tvGuideController.put);
-// tvGuideRouter.delete('/:id', tvGuideController.delete);
+tvGuideRouter.post('/show', tvGuideController.createShow);
+tvGuideRouter.put('/show/:id', tvGuideController.updateShow);
+tvGuideRouter.delete('/show/:id', tvGuideController.deleteShow);
 
 module.exports = {
     tvGuideRouter
