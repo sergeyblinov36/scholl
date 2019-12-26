@@ -1,3 +1,6 @@
+//the code resembles David Sallam's because I used it as a reference to write my code
+//I did not copy it,but like I've said I used it as a reference
+
 const tvGuide = require("./data");
 const dotenv = require ('dotenv');
 const mongoose = require('mongoose');
