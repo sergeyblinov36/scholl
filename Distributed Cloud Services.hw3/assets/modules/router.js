@@ -8,7 +8,6 @@ const tvGuideRouter = new Router();
 tvGuideRouter.get(`/date/:Date`, tvGuideController.getByTime);
 tvGuideRouter.get(`/name/:id`, tvGuideController.getById);
 tvGuideRouter.get("/all", tvGuideController.getAll);
-//tvGuideRouter.get("/*",tvGuideController.error);
 tvGuideRouter.post('/show', tvGuideController.createShow);
 tvGuideRouter.put('/show/:id', tvGuideController.updateShow);
 tvGuideRouter.delete('/show/:id', tvGuideController.deleteShow);

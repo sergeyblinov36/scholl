@@ -16,19 +16,4 @@ mongoose
     .catch(err => console.error('some error occurred', err));
 
 
-
-
-// mongoose.connection.on('open', () => {
-//     ts.find({}, (err, result) => {
-//
-//         if (err)
-//
-//             throw err;
-//
-//         console.log(result);
-//
-//     });
-//
-// });
-
 module.exports ={ ts,url,options};
